@@ -4,7 +4,7 @@
 
 APISIX一个动态、实时、高性能的 API 网关，基于 [Nginx](https://juejin.cn/post/6844904144235413512)网络库和[etcd](https://juejin.cn/post/6844904031186321416)实现， 提供负载均衡、动态上游、灰度发布、服务熔断、身份认证、可观测性等丰富的流量管理功能。
 
-![APISIX架构](..\APISIX\Img\apisix.png)
+![](..\APISIX\Img\apisix.png)
 
 我们可以把Apache APISIX 当做流量入口，来处理所有的业务数据，包括动态路由、动态上游、动态证书、 A/B 测试、金丝雀发布(灰度发布)、蓝绿部署、限流限速、抵御恶意攻击、监控报警、服务可观测性、服务治理等。
 
@@ -152,7 +152,7 @@ apisix restart
 
 ![](..\APISIX\Img\Upstream2.png)
 
-![](..\APISIX\Img\Upstream3.png)
+![](./APISIX/Img/Upstream3.png)
 
 
 
