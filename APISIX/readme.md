@@ -4,7 +4,7 @@
 
 APISIX一个动态、实时、高性能的 API 网关，基于 [Nginx](https://juejin.cn/post/6844904144235413512)网络库和[etcd](https://juejin.cn/post/6844904031186321416)实现， 提供负载均衡、动态上游、灰度发布、服务熔断、身份认证、可观测性等丰富的流量管理功能。
 
-![](..\APISIX\Img\apisix.png)
+![](./Img/apisix.png)
 
 我们可以把Apache APISIX 当做流量入口，来处理所有的业务数据，包括动态路由、动态上游、动态证书、 A/B 测试、金丝雀发布(灰度发布)、蓝绿部署、限流限速、抵御恶意攻击、监控报警、服务可观测性、服务治理等。
 
@@ -148,11 +148,11 @@ apisix restart
 
 > body请求参数
 
-![](..\APISIX\Img\Upstream1.png)
+![](./Img/Upstream1.png)
 
-![](..\APISIX\Img\Upstream2.png)
+![](./Img/Upstream2.png)
 
-![](./APISIX/Img/Upstream3.png)
+![](./Img/Upstream3.png)
 
 
 
@@ -207,31 +207,31 @@ Route通过定义一些路由规则来匹配客户端的请求，然后根据匹
 
 之后就可以通过访问APISIX的服务来进行转发访问具体的应用：
 
-![](..\APISIX\Img\Route0.png)
+![](./Img/Route0.png)
 
 ###### 具体的请求方法：
 
-![请求方法](..\APISIX\Img\Route1.png)
+![请求方法](./Img/Route1.png)
 
 **这里的path表示url请求参数中的名字部分**
 
 ###### URL请求参数：
 
-![url请求参数](..\APISIX\Img\Route2.png)
+![url请求参数](./Img/Route2.png)
 
 ###### body请求参数
 
-![body请求参数](..\APISIX\Img\Route3.png "第一部分")
+![body请求参数](./Img/Route3.png "第一部分")
 
-![body请求参数](..\APISIX\Img\Route4.png "第二部分")
+![body请求参数](./Img/Route4.png "第二部分")
 
-![body请求参数](..\APISIX\Img\Route5.png "第三部分")
+![body请求参数](./Img/Route5.png "第三部分")
 
-![body请求参数](..\APISIX\Img\Route6.png "第四部分")
+![body请求参数](./Img/Route6.png "第四部分")
 
 ###### 运算符列表
 
-![](..\APISIX\Img\Route7.png)
+![](./Img/Route7.png)
 
 具体的示例：
 
@@ -373,11 +373,11 @@ Service是某类API的抽象（也可以理解为一组Route的抽象）。它�
 
 > 请求方法
 
-![](..\APISIX\Img\Service1.png)
+![](./Img/Service1.png)
 
 > body请求参数
 
-![](..\APISIX\Img\Service2.png)
+![](./Img/Service2.png)
 
 
 
@@ -389,11 +389,11 @@ Consumer是某类服务的消费者，需要与用户认证体系配合才能使
 
 > 请求方法
 
-![](..\APISIX\Img\Consumer1.png)
+![](./Img/Consumer1.png)
 
 > body请求参数
 
-![](..\APISIX\Img\Consumer2.png)
+![](./Img/Consumer2.png)
 
 绑定认证授权插件有些特别，当它需要与 consumer 联合使用时，需要提供用户名、密码等信息；另一方面，当它与 route/service 绑定时，是不需要任何参数的。因为这时候是根据用户请求数据来反向推出用户对应的是哪个 consumer。
 
@@ -432,7 +432,7 @@ Consumer是某类服务的消费者，需要与用户认证体系配合才能使
 
 以下是测试执行情况，首先是没有使用apikey的情况，当然是会返回错误信息的。添加了apikey之后就能正常访问了。
 
-![](..\APISIX\Img\key-auth.png)
+![](./Img/key-auth.png)
 
 ##### 2.5 SSL
 
@@ -440,11 +440,11 @@ Consumer是某类服务的消费者，需要与用户认证体系配合才能使
 
 > 请求方法
 
-![](..\APISIX\Img\SSL1.png)
+![](./Img/SSL1.png)
 
 > body请求参数
 
-![](..\APISIX\Img\SSL2.png)
+![](./Img/SSL2.png)
 
 
 
